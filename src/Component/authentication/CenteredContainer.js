@@ -1,0 +1,16 @@
+import React from 'react'
+import {Container} from 'react-bootstrap'
+
+function CenteredContainer({children}) {
+    return (
+        <Container className="d-flex align-items-center justify-content-center" 
+      style={{minHeight:"100vh"}} >
+        <div className="w-100" style={{maxWidth:"400px"}} >
+            {/* Print any children passed into this component */}
+            {children}
+        </div>
+      </Container>
+    )
+}
+
+export default CenteredContainer
